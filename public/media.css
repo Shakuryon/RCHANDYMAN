@@ -1,0 +1,24 @@
+/* Breakpoints: swap in your usual set if different */
+@media (max-width:1200px){.wrap{width:min(1040px,100% - 2.5rem)}.gallery{gap:1rem}}
+@media (max-width:992px){
+ .hero-in,.about,.est{grid-template-columns:1fr}
+ .hero-logo{order:-1}.plate{width:240px}
+ .foot-grid{grid-template-columns:1fr 1fr}.owner{max-width:380px}
+}
+@media (max-width:768px){
+ .menu-btn{display:block}
+ .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:3px solid var(--silver);padding:.5rem 1.25rem 1rem}
+ .nav.open{display:block}.nav ul{flex-direction:column;align-items:stretch}.nav a{padding:.9rem .5rem}
+ .nav a.btn-nav{margin-top:.5rem}.gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:576px){
+ .utility-in{justify-content:center}.brand-text small{display:none}
+ .actions .btn{width:100%}.gallery{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr}
+ form{padding:1.1rem}.foot-base{flex-direction:column}
+}
+@media (max-width:400px){html{font-size:calc(100% * var(--scale))}.brand-text strong{font-size:1.1rem}.plate{width:200px}}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}
+ .tape{animation:none;width:100%}.btn:hover,.card:hover{transform:none}
+}
+@media print{.utility,.menu-btn,.tape,form,.nav{display:none}.hero,.dark{background:#fff;color:#000}.hero h1,.dark h2,.dark h3{color:#000}}
